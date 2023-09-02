@@ -1,0 +1,12 @@
+/*footer style*/
+
+@import '../index.css';
+
+footer {
+    background-color: var(--header-color  );
+    color : var(--text);
+}
+
+footer:not(:first-of-type) {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}

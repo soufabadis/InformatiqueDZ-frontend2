@@ -1,7 +1,7 @@
    
    
 :root {
-  --header-color : #12161f ;
+  --header-color : #181e2d ;
   --light-black : #282828  ;
   --border : #808080 ;
   --light-bleu-twitter: #1DA1F2;
@@ -9,6 +9,8 @@
   --bleu-nav : :#ddd ;
   --white-somke: #ccc ;
   --light-bleu :#f7f7f7  ;
+  --main-nav :#2874f0 ;
+  --text : #fff ;
 }
 
 * {
@@ -23,8 +25,9 @@ body {
 a {
  text-decoration : none ;
  display : inline-block ;
-
 }
+
+
 
  /*-------------header------------*/
   .bgd-color {
@@ -51,7 +54,7 @@ a {
   border-bottom: 1px solid #ccc;
 }
 .main-navbar .top-navbar{
-  background-color: #2874f0;
+  background-color: var(--header-color  );
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -94,3 +97,4 @@ a {
       padding: 8px 10px;
   }
 }
+

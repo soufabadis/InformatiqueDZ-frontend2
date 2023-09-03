@@ -2,22 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../index.css';
 import { faSearch, faShoppingCart, faHeart, faUser, faPhone, faSignOut } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTelegram, faTwitter,faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
   return (
     /* header top */
-    <header className="header-top py-1.5 bgd-color custom-border">
+    <header className="header-top py-1.5 bgd-color custom-border"  style={{ zIndex: 1000 }}>
       <div className="container-xxl">
         <div className="row bgd-color">
-          <div className="col-6 bgd-color d-flex align-items-center justify-content-center pt-1.5">
+          <div className="col-md-6  d-none d-sm-block bgd-color d-flex align-items-center justify-content-center pt-1.5">
             <p className="custom-very-small bgd-color m-0 text-capitalize">
               free shipping over 100 and free return
             </p>
           </div>
-          <div className="col-6 bgd-color d-flex align-items-center justify-content-center pt-1.5">
-            <p className="custom-very-small bgd-color m-0 text-capitalize text-black">
+          <div className="col-md-6  bgd-color d-flex  align-items-center justify-content-center pt-1.5">
+            <p className="custom-very-small bgd-color m-0 text-capitalize ">
               contact :
               <a href="tel:+221658665062" className=''> +221 658665062 / 0658665062</a>
               <a><FontAwesomeIcon icon={faPhone} className='px-2 bgd-color text-black' /> </a>
@@ -30,12 +30,15 @@ const Header = () => {
               <a href="https://www.twitter.com" className='text-white mx-2 '>
                 <FontAwesomeIcon icon={faTelegram} className='twitter-icons ' />
               </a>
+              <a href="https://www.twitter.com" className=' mx-2 '>
+                <FontAwesomeIcon icon={faGithub}  />
+              </a>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="main-navbar shadow-sm sticky-top">
+      <div className="main-navbar shadow-sm sticky-top  ">
         <div className="top-navbar">
           <div className="container-fluid">
             <div className="row">

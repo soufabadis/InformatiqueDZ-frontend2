@@ -1,0 +1,86 @@
+
+@import '../index.css';
+
+
+
+/* Set the background image size to cover the entire viewport */
+.carousel-item {
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 1.5vh);
+  background-color: rgba(255, 255, 255, 0.5); 
+
+}
+
+/* Center the content of the carousel items vertically */
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* Customize the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  border-radius: 50%; 
+  background-color: blue; 
+  width: 40px; 
+  height: 40px; 
+}
+
+
+/* Center the carousel control buttons vertically */
+.carousel-control-prev,
+.carousel-control-next {
+  top: calc(50% - 20px); 
+}
+
+/* Add opacity to the carousel items */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9); 
+  opacity: 1; 
+  transition: opacity 0.3s ease-in-out; 
+}
+
+/* Move the carousel indicators below the text */
+/* Move the carousel indicators below the text */
+.carousel-indicators {
+  position: absolute;
+  bottom: 30%;
+  margin-bottom: 20px; 
+}
+
+
+/* Style the carousel indicators as needed */
+.carousel-indicators button {
+  width: 12px; 
+  height: 12px; 
+  border-radius: 50%; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  margin: 0 5px; 
+  transition: background-color 0.3s ease-in-out; 
+}
+
+/* Style the active indicator */
+.carousel-indicators .active {
+  background-color: white; 
+}
+
+.home-wrapper-2 {
+  background-color : var(--wrapper);
+}
+
+.services {
+  gap : 1rem ;
+}

@@ -1,80 +1,101 @@
-import image1 from '../assets/images/image1.jpg' ;
-import image2 from '../assets/images/image2.jpg' ;
-import image3 from '../assets/images/image3.jpg' ;
+import React from 'react';
+import image1 from '../assets/images/image1.jpg';
+import image2 from '../assets/images/image2.jpg';
+import image3 from '../assets/images/image3.jpg';
+import service2 from '../assets/images/service-02.png';
+import service3 from '../assets/images/service-03.png';
+import service4 from '../assets/images/service-04.png';
+import service5 from '../assets/images/service-05.png';
+import service1 from '../assets/images/service.png';
+
+import '../styles/home.css';
 
 function Home() {
-    const carouselStyle = {
-      backgroundImage: 'url("../assets/images/image1.jpg")', // Replace with your image path
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-    };
-  
-    return (
-      <main>
-        <section className='home-wrapper-1 py-5'>
-          <div className="container-fluid p-0">
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={carouselStyle}>
-              <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  return <main>
+    <section className='home-wrapper-1 py-3.5'>
+      <div className="container-fluid p-0">
+        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="carousel-background carousel-overlay " style={{ backgroundImage: `url(${image1})` }}></div>
+              <div className="carousel-caption">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
               </div>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <div className="d-block w-100 img-fluid">
-                  <img src={image2} className="d-block w-100 img-fluid" alt="Slide 2" />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-                  </div>
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="d-block w-100 img-fluid">
-                  <img src={image3} className="d-block w-100 img-fluid" alt="Slide 2" />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-                  </div>
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="d-block w-100 img-fluid">
-                  <img src={image3} className="d-block w-100 img-fluid" alt="Slide 2" />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-                  </div>
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
+            </div>
+            <div className="carousel-item">
+              <div className="carousel-background carousel-overlay " style={{ backgroundImage: `url(${image2})` }}></div>
+              <div className="carousel-caption">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
               </div>
-              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
+            </div>
+            <div className="carousel-item">
+              <div className="carousel-background carousel-overlay " style={{ backgroundImage: `url(${image3})` }}></div>
+              <div className="carousel-caption">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
             </div>
           </div>
-        </section>
-      </main>
-    );
-  }
-  
-  export default Home;
-  
-  
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    {/* section 2*/ }
+
+    <section className="home-wrapper-2 py-5">
+  <div className="container-xxl">
+    <div className="row justify-content-center align-items-center">
+      {/* Display 2 columns on small screens */}
+      <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
+        <img src={service1} alt="Service 1" className="img-fluid" style={{ maxWidth: '100px' }} />
+        <h6>Free Shipping</h6>
+        <p>Get your items shipped for free.</p>
+      </div>
+      <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
+        <img src={service2} alt="Service 2" className="img-fluid" style={{ maxWidth: '100px' }} />
+        <h6>Daily Surprise Offers</h6>
+        <p>Enjoy daily surprise offers and discounts.</p>
+      </div>
+
+      {/* Display 2 columns on small screens */}
+      <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
+        <img src={service3} alt="Service 3" className="img-fluid" style={{ maxWidth: '100px' }} />
+        <h6>Support 24/7</h6>
+        <p>Our support team is available 24/7.</p>
+      </div>
+      <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
+        <img src={service4} alt="Service 4" className="img-fluid" style={{ maxWidth: '100px' }} />
+        <h6>Affordable Prices</h6>
+        <p>Shop with affordable prices.</p>
+      </div>
+
+      {/* Display 2 columns on small screens */}
+      <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
+        <img src={service5} alt="Service 5" className="img-fluid" style={{ maxWidth: '100px' }} />
+        <h6>Secure Payments</h6>
+        <p>Your payments are secure with us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+}
+
+export default Home;

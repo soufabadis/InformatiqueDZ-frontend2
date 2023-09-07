@@ -11,6 +11,7 @@
   --light-bleu :#f7f7f7  ;
   --main-nav :#2874f0 ;
   --text : #fff ;
+  --wrapper : #f5f5f7;
 }
 
 * {
@@ -31,8 +32,12 @@ a {
 
  /*-------------header------------*/
   .bgd-color {
-  background-color : var( --white-somke ) ;
+    background: linear-gradient(to buttom, #181e2d, #ffffff);
+  
+  }
 
+  .bgtop-color {
+    background : var(--white-somke) ;
   }
   .custom-very-small{
     font-size : 0.9rem ;

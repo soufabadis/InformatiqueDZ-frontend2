@@ -1,9 +1,9 @@
-import '../styles/footer.css';
+import { faFacebookF, faGithub, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { faFacebookF, faTelegram, faTwitter,faGithub } from '@fortawesome/free-brands-svg-icons';
 
+import '../styles/footer.css';
 
 
 function Footer() {
@@ -11,7 +11,7 @@ function Footer() {
       {/* Footer Top */}
       <footer className='py-3'>
   <div className='container-xxl'>
-    <div className='row align-items-center '>
+    <div className='row align-items-center  '>
       <div className='col-md-5 col-12 d-flex justify-content-center gap-3 rocket-icon'>
         <FontAwesomeIcon icon={faRocket} size="xl" />
         <h5>Sign Up for Newsletter</h5>

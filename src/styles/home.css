@@ -84,3 +84,43 @@
 .services {
   gap : 1rem ;
 }
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.card.expanded {
+  height: auto;
+  background-color: #f0f0f0;
+}
+
+.card.expanded p {
+  margin-top: 10px;
+}
+
+.card-wrapper {
+  background-color: var(  --text );
+  box-shadow: 0 0 10px var(--box-shadow);
+  padding :15px ;
+}

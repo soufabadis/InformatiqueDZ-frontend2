@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 import image1 from '../assets/images/image1.jpg';
 import image2 from '../assets/images/image2.jpg';
 import image3 from '../assets/images/image3.jpg';
@@ -7,10 +9,17 @@ import service3 from '../assets/images/service-03.png';
 import service4 from '../assets/images/service-04.png';
 import service5 from '../assets/images/service-05.png';
 import service1 from '../assets/images/service.png';
+import FramerCard from '../components/FramerCard';
 
+
+import FastMarque from '../components/FastMarque';
 import '../styles/home.css';
 
+
+
+
 function Home() {
+
   return <main>
     <section className='home-wrapper-1 py-3.5'>
       <div className="container-fluid p-0">
@@ -64,12 +73,12 @@ function Home() {
       <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
         <img src={service1} alt="Service 1" className="img-fluid" style={{ maxWidth: '100px' }} />
         <h6>Free Shipping</h6>
-        <p>Get your items shipped for free.</p>
+        <p>From all order over 5$.</p>
       </div>
       <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
         <img src={service2} alt="Service 2" className="img-fluid" style={{ maxWidth: '100px' }} />
         <h6>Daily Surprise Offers</h6>
-        <p>Enjoy daily surprise offers and discounts.</p>
+        <p>Save up to 25%.</p>
       </div>
 
       {/* Display 2 columns on small screens */}
@@ -81,20 +90,23 @@ function Home() {
       <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
         <img src={service4} alt="Service 4" className="img-fluid" style={{ maxWidth: '100px' }} />
         <h6>Affordable Prices</h6>
-        <p>Shop with affordable prices.</p>
+        <p>Get Factory Default Price.</p>
       </div>
 
       {/* Display 2 columns on small screens */}
       <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
         <img src={service5} alt="Service 5" className="img-fluid" style={{ maxWidth: '100px' }} />
         <h6>Secure Payments</h6>
-        <p>Your payments are secure with us.</p>
+        <p>100% secure payment.</p>
       </div>
     </div>
   </div>
+  
 </section>
-
-
+<FramerCard></FramerCard>
+<section className="brand-section-wrapper  home-wrapper-2 py-5">
+   <FastMarque></FastMarque>
+</section>
   </main>
 }
 

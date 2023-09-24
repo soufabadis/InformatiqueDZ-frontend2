@@ -74,7 +74,7 @@
 
 /* Style the active indicator */
 .carousel-indicators .active {
-  background-color: white; 
+  background-color: var(--text); 
 }
 
 .home-wrapper-2 {
@@ -85,6 +85,7 @@
   gap : 1rem ;
 }
 
+/*homecard*/
 
 .card-container {
   display: flex;
@@ -112,7 +113,7 @@
 
 .card.expanded {
   height: auto;
-  background-color: #f0f0f0;
+  background-color: var( --card-color );
 }
 
 .card.expanded p {
@@ -121,6 +122,24 @@
 
 .card-wrapper {
   background-color: var(  --text );
-  box-shadow: 0 0 10px var(--box-shadow);
   padding :15px ;
+}
+
+
+/* blogCard*/
+.caed-image{
+  height: auto;
+  margin: 0 3rem;
+}
+.blog-card{
+   background-color: var( --text);
+   border-radius: 10px;
+   width :22rem;
+}
+.blog-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-content {
+  padding: 15px;
 }

@@ -12,7 +12,7 @@ const Header = () => {
     <header>
     <div className="container-xxl">
       <div className="row bgd-color">
-        <div className="col-md-6  d-none d-sm-block color d-flex align-items-center justify-content-center pt-1.5">
+        <div className="col-md-6  d-none d-sm-none d-md-block d-lg-blockcolor d-flex align-items-center justify-content-center pt-1.5">
           <p className="custom-very-small  m-0 text-capitalize">
             free shipping over 100 and free return
           </p>

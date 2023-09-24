@@ -9,10 +9,12 @@ import service3 from '../assets/images/service-03.png';
 import service4 from '../assets/images/service-04.png';
 import service5 from '../assets/images/service-05.png';
 import service1 from '../assets/images/service.png';
-import FramerCard from '../components/FramerCard';
+import { blogData } from '../data/blogData';
 
 
+import BlogCard from '../components/BlogCard';
 import FastMarque from '../components/FastMarque';
+import Card from '../components/card';
 import '../styles/home.css';
 
 
@@ -103,9 +105,16 @@ function Home() {
   </div>
   
 </section>
-<FramerCard></FramerCard>
+ <Card></Card>
 <section className="brand-section-wrapper  home-wrapper-2 py-5">
    <FastMarque></FastMarque>
+</section>
+<section className='blog-wrapper py-5 home-wrapper-2 '>
+  <div className='blogWrapper   d-flex flex align-items-center justify-content-center gap-5 '>
+  {blogData.map(item => <BlogCard day={item.day} title={item.title} desc={item.description} img = {item.Image}
+  ></BlogCard>)
+}
+  </div>
 </section>
   </main>
 }

@@ -129,7 +129,6 @@
 /* blogCard*/
 .caed-image{
   height: auto;
-  margin: 0 3rem;
 }
 .blog-card{
    background-color: var( --text);
@@ -142,4 +141,35 @@
 }
 .blog-content {
   padding: 15px;
+}
+/* product card*/
+.product-card {
+  border-radius: 15px;
+  background-color: var(--text);
+  padding : 15px;
+}
+.product-card .product-detail .brand {
+  font-size: 13px;
+}
+.product-card .product-detail h5 {
+  color : var(--product-title) ;
+  font-size: 15px;
+}
+
+.product-card .product-detail p {
+  font-size: 16px;
+  color : var(--product-title) ;
+
+}
+.position-bar {
+  top:10% ;
+  right: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+
+}
+.product-card:hover .position-bar {
+  opacity:1;
+  visibility: visible;
 }

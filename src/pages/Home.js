@@ -8,13 +8,14 @@ import service3 from "../assets/images/service-03.png";
 import service4 from "../assets/images/service-04.png";
 import service5 from "../assets/images/service-05.png";
 import service1 from "../assets/images/service.png";
-import { blogData } from "../data/blogData";
-import { productData } from "../data/productData";
-
 import BlogCard from "../components/BlogCard";
 import FastMarque from "../components/FastMarque";
 import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 import Card from "../components/card";
+import { blogData } from "../data/blogData";
+import { productData } from "../data/productData";
+import { specialProductData } from "../data/specialProductData";
 import "../styles/home.css";
 
 function Home() {
@@ -116,7 +117,7 @@ function Home() {
         </div>
       </section>
 
-      {/* section 2*/}
+      {/* section 2 */}
 
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
@@ -203,7 +204,8 @@ function Home() {
                 {productData.map((item) => (
                   <ProductCard
                     productTitle={item.title}
-                    productimg={item.Image}
+                    productimg1={item.Image}
+                    productimg2={item.Image2}
                     title={item.title}
                     price={item.price}
                     brand={item.brand}
@@ -211,6 +213,24 @@ function Home() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="specialproduct-section-wrapper py-5  home-wrapper-2 ">
+        <div className="container-xxl">
+          <div className="row d-flex justify-content-center gap-4 ">
+            {specialProductData.map((item) => (
+              <SpecialProduct
+                image={item.Image2}
+                imagealt={item.imagealt}
+                brand={item.brand}
+                title={item.title}
+                price={item.price}
+                discountDay={item.discountDay}
+                strikedprice={item.strikedprice}
+                productQuantity={item.productQuantity}
+              ></SpecialProduct>
+            ))}
           </div>
         </div>
       </section>

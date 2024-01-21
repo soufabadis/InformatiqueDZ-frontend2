@@ -17,6 +17,8 @@ import { blogData } from "../data/blogData";
 import { productData } from "../data/productData";
 import { specialProductData } from "../data/specialProductData";
 import "../styles/home.css";
+import { famousData } from "../data/famousData";
+import FamousCard from "../components/FamousCard";
 
 function Home() {
   return (
@@ -231,6 +233,22 @@ function Home() {
                 productQuantity={item.productQuantity}
               ></SpecialProduct>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className=" famous-wrraper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            {famousData.map((item,index) => (
+            <div key={index}  className="col-3">
+              <FamousCard
+                famoustitle={item.famousTitle}
+                famousImage={item.famousImage}
+                famousproduct={item.famousProduct}
+                famousdesc={item.famousdescr}
+              ></FamousCard>
+            </div>)
+            )}
           </div>
         </div>
       </section>

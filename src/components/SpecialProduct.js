@@ -23,7 +23,7 @@ export default function SpecialProduct({
             </div>
             <div className="special-card-info">
               <h5 className="brand">{brand}</h5>
-              <h7 className="title">{title}</h7>
+              <h7 className="title ">{title}</h7>
               <RatingStars
                 count={5}
                 size={24}
@@ -40,9 +40,8 @@ export default function SpecialProduct({
                 <p>
                   <b>{discountDay}</b>days
                 </p>
-                <span className="rounded-circle badge p-2 bg-alert"></span>
-                <span className="rounded-circle badge p-2 bg-warning"></span>
-                <span className="rounded-circle badge p-2 bg-warning"></span>
+              
+
               </div>
               <p>
                 Product:<span>{productQuantity}</span>

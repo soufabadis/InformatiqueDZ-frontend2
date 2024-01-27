@@ -17,6 +17,8 @@
   --product-title : #1c1c1b ;
   --product :#777777 ;
   --brand : #bf4800 ;
+  --forminput :#febd69;
+  --iconscolor :#f2f2f2;
 }
 
 * {
@@ -32,8 +34,12 @@ a {
  text-decoration : none ;
  display : inline-block ;
 }
-
-
+.section-title {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  color: var(--header-color);
+  margin-bottom: 2rem;
+}
 
  /*-------------header------------*/
   .bgd-color {

@@ -5,7 +5,7 @@ const FamousCard = ({famousImage,famousdesc,famoustitle,famousproduct}) => {
         <article className="famous-card">
             <div className="shadow-container">
 
-                  <img src={famousImage} alt="famous-card" style={{width:"16rem",height :"28rem",objectFit:"cover"}}></img>
+                  <img src={famousImage} alt="famous-card" style={{width:"100%",height :"28rem",objectFit:"cover"}}></img>
                 <div className="famous-content">
                 <h5 className="famous-title">{famoustitle}</h5>
                     <h6>{famousproduct}</h6>

@@ -128,13 +128,13 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <Link to="/home" className="nav-link">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/categories" className="nav-link">
-                  All Categories
+                <Link to="/store" className="nav-link">
+                  Our Store
                 </Link>
               </li>
               <li className="nav-item">

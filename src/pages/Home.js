@@ -19,10 +19,13 @@ import { specialProductData } from "../data/specialProductData";
 import "../styles/home.css";
 import { famousData } from "../data/famousData";
 import FamousCard from "../components/FamousCard";
+import { appleData } from "../data/appleCardData";
+import Meta from "../components/Meta";
 
 function Home() {
   return (
     <main>
+      <Meta title='Home'></Meta>
       <section className="home-wrapper-1 py-3.5">
         <div className="container-fluid p-0">
           <div
@@ -119,10 +122,11 @@ function Home() {
         </div>
       </section>
 
-      {/* section 2 */}
+      {/* section 2 home*/}
 
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
+        
           <div className="row justify-content-center align-items-center">
             {/* Display 2 columns on small screens */}
             <div className="col-4 col-md-2 d-flex flex-column align-items-center justify-content-center services">
@@ -182,12 +186,25 @@ function Home() {
           </div>
         </div>
       </section>
-      <Card></Card>
-      <section className="brand-section-wrapper  home-wrapper-2 py-5">
+      {/*section 3 applecard*/}
+     <section className=" applecardwrapper container-xxl py-3" style={{backgroundColor :"#eee" ,padding:"0.5rem",margin:"0.5rem 0"}}>
+        <h3 className="section-title mb-3 py-3"> APPLE PRO DISPLAY</h3>
+     <div className="row justify-content-center">
+      {appleData.map((item,index)=>(
+        <article className="col-3 ">
+          <Card key={index} title={item.product} product={item.product} price1={item.price1} price2={item.price2} price3={item.price3}totalprice={item.totalprice} image={item.Image}></Card>
+        </article>
+      ))}
+     </div>
+   </section>
+       {/*section 4 brand */}
+      <section className="brand-section-wrapper  home-wrapper-2 py-3">
         <FastMarque></FastMarque>
       </section>
+      {/*section 5 Blog*/}
       <section className="blog-wrapper py-5 home-wrapper-2 ">
-        <div className="blogWrapper   d-flex flex align-items-center justify-content-center gap-5 ">
+        <h3 className="section-title py-2">OUR BLOGS</h3>
+        <div className="blogWrapper d-flex align-items-center justify-content-center gap-5 ">
           {blogData.map((item) => (
             <BlogCard
               day={item.day}
@@ -198,8 +215,10 @@ function Home() {
           ))}
         </div>
       </section>
+      {/*section 6 product */}
       <section className="productcard-section-wrapper  home-wrapper-2 py-5">
         <div className="container-xxl">
+          <h3 className="section-title py-2">Special Product</h3>
           <div className="row">
             <div className="col-12">
               <div className="productcardWrapper  d-flex flex align-items-center justify-content-center gap-5 ">
@@ -218,6 +237,7 @@ function Home() {
           </div>
         </div>
       </section>
+      {/*section 7 specialProduct */}
       <section className="specialproduct-section-wrapper py-5  home-wrapper-2 ">
         <div className="container-xxl">
           <div className="row d-flex justify-content-center gap-4 ">
@@ -236,8 +256,10 @@ function Home() {
           </div>
         </div>
       </section>
+      {/*section 7 famous product */}
       <section className=" famous-wrraper py-5 home-wrapper-2">
         <div className="container-xxl">
+          <h3 className="section-title py-2">Famous product</h3>
           <div className="row">
             {famousData.map((item,index) => (
             <div key={index}  className="col-3">

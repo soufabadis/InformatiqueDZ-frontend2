@@ -1,0 +1,103 @@
+@import '../index.css';
+
+.filter-card {
+    background-color: var(--text);
+    border-radius: 1rem;
+   padding: 10px 15px;
+}
+.filter-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--product-title);
+    margin-bottom: 2rem;
+}
+.filter-card ul  {
+    font-size: 13px;
+    line-height: 30px;
+    cursor: pointer;
+    color: var(--product);
+}
+.filter-card ul li:hover {
+   color: var( --light-bleu-twitter);
+   font-size: 15px;
+}
+.filter-card .sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--product-title);
+}
+.form-check-label {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--product);
+}
+.form-check-input:checked {
+   background-color:var(--forminput);
+   box-shadow: none;
+}
+.form-check-input:focus {
+    box-shadow: none;
+    border-color: inherit;
+ }
+ .colors {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+ }
+ .colors li {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+ }
+ .product-tags-badge {
+    display: inline-block;
+    padding: .35em .65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2rem;
+ }
+ .random-products h5 {
+    font-size: 13px;
+    margin-bottom: 8px ;
+ } 
+
+ .random-products b {
+    font-size: 15px ;
+ }
+
+ .filter-grid-select{
+    padding: 10px;
+    background-color: var(--text);
+    border-radius: 10px;
+ }
+ 
+ .filter-grid-select select {
+    padding: 2px;
+ }
+ .grid-text {
+   font-size:13px;
+line-height: center; 
+padding-top: 15px;
+text-align: center;
+color: var(--product);}
+.iconsgrid img {
+width: 22px;
+height: 22px;
+background-color: var(--iconscolor);
+padding: 5px;
+cursor: pointer;
+border-radius: 4px;
+}
+.iconsgrid img:hover {
+ 
+   background-color: var(--light-bleu-twitter);
+ 
+   }

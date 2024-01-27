@@ -127,13 +127,13 @@
 
 
 /* blogCard*/
-.caed-image{
+.card-image{
   height: auto;
 }
 .blog-card{
    background-color: var( --text);
    border-radius: 10px;
-   width :22rem;
+   width :18rem;
 }
 .blog-card img {
   border-top-left-radius: 10px;

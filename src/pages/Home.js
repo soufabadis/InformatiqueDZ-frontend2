@@ -230,6 +230,7 @@ function Home() {
                     title={item.title}
                     price={item.price}
                     brand={item.brand}
+                    customstyle={"col-2"}
                   ></ProductCard>
                 ))}
               </div>

@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import RatingStars from 'react-rating-stars-component';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import image1 from '../assets/images/add-cart.svg';
 import image2 from '../assets/images/prodcompare.svg';
 import image3 from '../assets/images/view.svg';
 import wishlistimage from '../assets/images/wish.svg';
 import "../styles/home.css";
+import "../styles/store.css";
 
-export default function ProductCard({ productimg1, productimg2, productTitle, title, brand, price }) {
+
+export default function ProductCard({ productimg1, productimg2, productTitle, title, brand, price,grid }) {
   const [isHovered, setHovered] = useState(false);
-
+  let location = useLocation();
   return (
-    <article className="col-2">
+    <article className={`${location.pathname=="/store" ? `gr-${grid}` : "col-2"}`}>
       <div className="product-card position-relative" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
        <Link to="#" onClick={(e)=> e.preventDefault}> 
-       <div className="product-images ">
+       <div className="product-images object-fit-contain ">
         <img
             src={isHovered ? productimg2 : productimg1}
             alt={productTitle}
@@ -27,7 +29,7 @@ export default function ProductCard({ productimg1, productimg2, productTitle, ti
        </Link>
         <div className="product-detail ">
           <h6 className="brand text-danger">{brand}</h6>
-          <h5 className="product-title">
+          <h5 className="product-title text-center">
             {title}
           </h5>
           <RatingStars

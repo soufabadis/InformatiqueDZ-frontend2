@@ -100,4 +100,46 @@ border-radius: 4px;
  
    background-color: var(--light-bleu-twitter);
  
+}
+/*-----product card*/
+.product-Card-Wrapper{  
+   width: 23%;
+   margin-bottom: 1.5rem;
    }
+.gr-12 {
+   width: 80%;
+   margin-bottom:3rem;
+
+}
+.gr-6 {
+   width: 45%;
+   margin-bottom:2rem;
+
+}
+.gr-4 {
+   width: 23%;
+   margin-bottom:2rem;
+}
+.gr-3 {
+   width: 30%;
+   margin-bottom:2rem;
+
+}
+.gr-6 .product-images{
+width:10rem;
+height:10rem  ;
+object-fit: cover;
+}
+.gr-12 .product-card{
+   display: flex;
+   }
+   .gr-12 .product-images{
+      width:10rem;
+      height:10rem  ;
+      object-fit: cover;
+      }
+      .gr-12 .position-bar{
+         top:18% ;
+        
+         }
+         

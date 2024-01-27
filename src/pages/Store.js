@@ -7,10 +7,11 @@ import gridIcons2 from  "../assets/images/gr2.svg";
 import gridIcons3 from  "../assets/images/gr3.svg";
 import gridIcons4 from  "../assets/images/gr4.svg";
 
-
 import "../styles/store.css";
 
 import React, { useState } from 'react';
+import ProductCard from "../components/ProductCard";
+import { storeData } from "../data/ourStoreData";
 
 const Store = () => {
   const [grid, setGrid] = useState(0);
@@ -257,13 +258,27 @@ const Store = () => {
                         <p >Products</p>
                         </div>
                         <div className="d-flex align-items-center gap-2 iconsgrid">
-                          <img src={gridIcons2} className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(1)}></img>
-                          <img src={gridIcons3} className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(4)} ></img>
-                          <img src={gridIcons4}  className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(3)}></img>
-                          <img src={gridIcons} className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(2)}></img>
+                          <img src={gridIcons2} className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(6)}></img>
+                          <img src={gridIcons3} className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(3)} ></img>
+                          <img src={gridIcons4}  className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(4)}></img>
+                          <img src={gridIcons} className="img-fluid d-block" alt="grid" onClick={()=>gridsetter(12)}></img>
                         </div>
                        </div>
                   </div>
+                </div>
+                <div className="product-list flex-wrap d-flex align-items-center gap-7 justify-content-around py-4">
+                  {storeData.map((item,index)=> (
+                    <ProductCard
+                    productTitle={item.title}
+                    productimg1={item.Image}
+                    productimg2={item.Image2}
+                    title={item.title}
+                    price={item.price}
+                    brand={item.brand}
+                    key={index}
+                    grid={grid}                                        
+                  ></ProductCard>
+                  ))}
                 </div>
               </div>
             

@@ -128,7 +128,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/home" className="nav-link">
+                <Link to="/" className="nav-link">
                   Home
                 </Link>
               </li>
@@ -153,8 +153,8 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/fashions" className="nav-link">
-                  Fashions
+                <Link to="/blogs" className="nav-link">
+                  Our Blogs
                 </Link>
               </li>
               <li className="nav-item">
@@ -168,8 +168,8 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/appliances" className="nav-link">
-                  Appliances
+                <Link to="/contact" className="nav-link">
+                  Contact Us
                 </Link>
               </li>
             </ul>

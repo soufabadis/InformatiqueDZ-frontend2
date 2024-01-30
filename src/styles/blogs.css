@@ -1,0 +1,18 @@
+@import "../index.css";
+
+.blog-card-page {
+    background-color: var( --text);
+    border-radius: 10px;
+    width :42%;
+ }
+              
+ .blog-card-page .blog-content button {
+    background-color: var(--forminput);
+    border: none;
+    border-radius: 9px;
+ }
+ .form-control  {
+   width: 100%;
+ }
+ 
+ 

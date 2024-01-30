@@ -211,6 +211,7 @@ function Home() {
               title={item.title}
               desc={item.description}
               img={item.Image}
+              customblogstyle={"blog-card"}
             ></BlogCard>
           ))}
         </div>

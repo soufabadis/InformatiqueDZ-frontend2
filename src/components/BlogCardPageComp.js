@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/home.css';
+import '../styles/blogs.css';
 
 
-export default function BlogCard({img,day,title,desc,customblogstyle,grid}) {
+export default function BlogCardPageComp({img,day,title,desc,grid}) {
   return (
-        <div className={{grid}}>
-        <div className={customblogstyle}>
+        <div className='blog-card-page'>
             <div className="card-image">
                 <img src={img} alt='blog'  width={'100%'}/>
             </div>
@@ -15,7 +14,7 @@ export default function BlogCard({img,day,title,desc,customblogstyle,grid}) {
                 <h5> {title}</h5>
                 <p className='decr'>{desc}
                 </p >
-                <button className='btn btn-primary'
+                <button className='btn'
                 >
                      <Link to='/'  className=' text-white'>
                     Read More
@@ -23,7 +22,6 @@ export default function BlogCard({img,day,title,desc,customblogstyle,grid}) {
                 </button>
                
             </div>
-        </div>
     </div>
   )
 }

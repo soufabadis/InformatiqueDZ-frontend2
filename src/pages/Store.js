@@ -14,10 +14,9 @@ import ProductCard from "../components/ProductCard";
 import { storeData } from "../data/ourStoreData";
 
 const Store = () => {
-  const [grid, setGrid] = useState(0);
+  const [grid, setGrid] = useState(4);
   const gridsetter =(i)=>{
       setGrid(i)
-      alert(grid)
   }
   return (
     <div>
@@ -164,19 +163,19 @@ const Store = () => {
                   <h3 className="filter-title">Product Tags</h3>
                   <div>
                     <div className="product-tags d-flex flex-wrap align-content-center gap-2">
-                      <span className="bg-light rounded-3 py-2 px-3 .product-tags-badge text-secondary">
+                      <span className=" rounded-3 py-2 px-3 product-tags-badge ">
                         Headphone
                       </span>
-                      <span className="bg-light rounded-3 py-2 px-3 .product-tags-badge text-secondary">
+                      <span className=" rounded-3 py-2 px-3 product-tags-badge ">
                         Loptop
                       </span>
-                      <span className="bg-light rounded-3 py-2 px-3 .product-tags-badge text-secondary">
+                      <span className="rounded-3 py-2 px-3 product-tags-badge ">
                         Mobile
                       </span>
-                      <span className="bg-light rounded-3 py-2 px-3 .product-tags-badge text-secondary">
+                      <span className=" rounded-3 py-2 px-3 product-tags-badge ">
                         Tv
                       </span>
-                      <span className="bg-light rounded-3 py-2 px-3 .product-tags-badge text-secondary">
+                      <span className="rounded-3 py-2 px-3 product-tags-badge ">
                         Watch
                       </span>
                     </div>
@@ -275,6 +274,7 @@ const Store = () => {
                     title={item.title}
                     price={item.price}
                     brand={item.brand}
+                    description={item.description}
                     key={index}
                     grid={grid}                                        
                   ></ProductCard>

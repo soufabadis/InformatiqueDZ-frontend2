@@ -9,14 +9,14 @@ import "../styles/home.css";
 import "../styles/store.css";
 
 
-export default function ProductCard({ productimg1, productimg2, productTitle, title, brand, price,grid }) {
+export default function ProductCard({ description,productimg1, productimg2, productTitle, title, brand, price,grid }) {
   const [isHovered, setHovered] = useState(false);
   let location = useLocation();
   return (
     <article className={`${location.pathname=="/store" ? `gr-${grid}` : "col-2"}`}>
       <div className="product-card position-relative" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
        <Link to="#" onClick={(e)=> e.preventDefault}> 
-       <div className="product-images object-fit-contain ">
+       <div className="product-images  ">
         <img
             src={isHovered ? productimg2 : productimg1}
             alt={productTitle}
@@ -39,7 +39,8 @@ export default function ProductCard({ productimg1, productimg2, productTitle, ti
             edit={false}
             activeColor="#ffd700"
           />
-          ,<p className="price">{price}</p>
+            <p className={`description ${grid ===12 ? "d-block" : "d-none"}`}> {description}</p>
+          <p className="price">{price}</p>
           <div className="wishList  position-absolute">
             <div>
               <Link>

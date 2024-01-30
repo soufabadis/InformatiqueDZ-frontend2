@@ -1,0 +1,21 @@
+@import "../index.css";
+
+.contact-wrapper  {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--text);
+}
+
+.contact-wrapper h3{
+    font-size: 21px;
+    padding: 1rem;
+    line-height: 35px;
+    text-align: left;
+    font-weight: 500;
+}
+.input-wrapper {
+    padding: 0rem 15rem;
+    height: 0px;
+
+}
+  

@@ -77,9 +77,7 @@
   background-color: var(--text); 
 }
 
-.home-wrapper-2 {
-  background-color : var(--wrapper);
-}
+
 
 .services {
   gap : 1rem ;
@@ -162,6 +160,10 @@
   font-size: 16px;
   color : var(--product-title) ;
   
+}
+.product-card .product-detail .description {
+  font-size: 13px;
+color: var( --text-description );
 }
 .position-bar {
 

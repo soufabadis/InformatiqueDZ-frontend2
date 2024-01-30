@@ -19,6 +19,9 @@
   --brand : #bf4800 ;
   --forminput :#febd69;
   --iconscolor :#f2f2f2;
+  --bg-light : #f8f9fa ;
+  --bg-info : #0dcaf0;
+  --text-description :#777777;
 }
 
 * {
@@ -39,6 +42,22 @@ a {
   font-family: 'Libre Baskerville', serif;
   color: var(--header-color);
   margin-bottom: 2rem;
+}
+.home-wrapper-2 {
+  background-color : var(--wrapper);
+}
+
+.btn {
+  background-color: var(--forminput);
+  border: none;
+  border-radius: 9px;
+}
+.btn:hover {
+  background-color: var(--main-nav);
+  color: white;
+}
+.form-control:focus {
+
 }
 
  /*-------------header------------*/

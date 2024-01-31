@@ -81,7 +81,7 @@ const Header = () => {
                   >
                     <FontAwesomeIcon icon={faUser} /> Username
                   </Link>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown ">
                     <li>
                       <Link to="/user/profile" className="dropdown-item">
                         <FontAwesomeIcon icon={faUser} /> Profile
@@ -143,8 +143,8 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/featured-products" className="nav-link">
-                  Featured Products
+                <Link to="/compare" className="nav-link">
+                  Compare Products
                 </Link>
               </li>
               <li className="nav-item">
@@ -154,7 +154,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link to="/blogs" className="nav-link">
-                  Our Blogs
+                  Blogs
                 </Link>
               </li>
               <li className="nav-item">

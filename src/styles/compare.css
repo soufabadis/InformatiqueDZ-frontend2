@@ -1,7 +1,7 @@
 @import "../index.css";
 
 .compare-products-card  {
-    padding: 20px 17px;
+    padding: 20px 24px;
     background-color: var(--text);
     border-radius: 10px;
 }
@@ -11,6 +11,13 @@
     cursor: pointer;
     top: 15px;
     right: 15px;
+}
+.compare-image  {
+    width: 89%;
+    object-fit: contain;
+}
+.Products-wrapper {
+    padding: 0px 10rem;
 }
 .compare-products-card .compare-product-detail .title {
     font-size: 15px;

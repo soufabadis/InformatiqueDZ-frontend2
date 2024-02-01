@@ -83,8 +83,8 @@ const Header = () => {
                   </Link>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown ">
                     <li>
-                      <Link to="/user/profile" className="dropdown-item">
-                        <FontAwesomeIcon icon={faUser} /> Profile
+                      <Link to="/login" className="dropdown-item">
+                        <FontAwesomeIcon icon={faUser} /> Login
                       </Link>
                     </li>
                     <li>

@@ -7,7 +7,6 @@ import "../styles/blogs.css";
 
 const Blogs = () => {
   return (
-    <div>
       <main>
         <Meta title="Our Store"></Meta>
         <div className="blogs-wrapper  home-wrapper-2 py-5">
@@ -44,7 +43,6 @@ const Blogs = () => {
 
         <BreadCrumb title="Our Blogs"></BreadCrumb>
       </main>
-    </div>
   );
 };
 

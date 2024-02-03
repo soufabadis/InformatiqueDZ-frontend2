@@ -8,6 +8,7 @@ import Blogs from './pages/Blogs';
 import ContactUs from './pages/ContactUs';
 import CompareProducts from './pages/CompareProducts';
 import Login from './pages/Login';
+import Wishlist from './pages/Wishlist';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="blogs" element={<Blogs/>} />
           <Route path="Compare" element={<CompareProducts/>} />
           <Route path="login" element={<Login/>} />
+          <Route path="wishlist" element={<Wishlist/>} />
 
 
      </Route>

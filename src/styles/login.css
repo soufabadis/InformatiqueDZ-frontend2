@@ -1,0 +1,40 @@
+
+
+    .login-form{
+    border-radius: 20px;
+    margin-top: 150px ;
+    width: 33% ;
+    background-color: white;
+    padding: 50px;
+}
+
+.login-button{
+    width: 70%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,14,154,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.form-control{
+    color: rgba(0,0,0,.87);
+    border-bottom-color: rgba(0,0,0,.42);
+    box-shadow: none ;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    }
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+ }  
+ .form-label{
+    font-weight: 800 ;
+ }
+ .login-button:hover{
+    transform: scale(1.07);
+ }
+ @media only screen and (max-width: 600px) {
+    form {
+        width: 100% !important;
+    }
+  }

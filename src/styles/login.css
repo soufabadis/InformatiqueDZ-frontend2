@@ -2,14 +2,15 @@
 
     .login-form{
     border-radius: 20px;
-    margin-top: 150px ;
+    margin-top: 50px ;
     width: 33% ;
-    background-color: white;
+    background-color:  #99e7ff
+    ;
     padding: 50px;
 }
 
-.login-button{
-    width: 70%;
+.login-button,.Signup-button{
+    width: 50%;
     border: none;
     border-radius: 50px;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,14,154,1) 35%, rgba(0,212,255,1) 100%);
@@ -30,9 +31,15 @@
  .form-label{
     font-weight: 800 ;
  }
- .login-button:hover{
+ .login-button:hover {
     transform: scale(1.07);
  }
+ .Signup-button:hover{
+    transform: scale(1.07);
+ }
+ .form-text {
+    cursor: pointer;
+ } 
  @media only screen and (max-width: 600px) {
     form {
         width: 100% !important;

@@ -79,7 +79,7 @@ const Header = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <FontAwesomeIcon icon={faUser} /> Username
+                    <FontAwesomeIcon icon={faUser} /> Account
                   </Link>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown ">
                     <li>

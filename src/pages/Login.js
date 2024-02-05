@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form';
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import "../styles/login.css";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const {
@@ -23,7 +24,7 @@ const Login = () => {
     }
   };
   return (
-    <main>
+    <div>
       <Meta title="Login"></Meta>
       <div className="login-wrapper  home-wrapper-2 ">
       <div className="container-fluid">
@@ -31,12 +32,13 @@ const Login = () => {
         <h4 className="text-center title">Login</h4>
         <div className="mb-3 mt-5">
           <label htmlFor="username" className="form-label">
-            User Name
+            Username
           </label>
           <input
             type="text"
             className="form-control"
             id="username"
+            placeholder='Enter Username'
             aria-describedby="emailHelp"
             {...register('username', { required: 'Username is required' })}
           />
@@ -50,22 +52,29 @@ const Login = () => {
             type="password"
             className="form-control"
             id="password"
+            placeholder='Enter Password'
             {...register('password', { required: 'Password is required' })}
           />
-          <div id="emailHelp" className="form-text mt-3">
-            Forgot password?
+          <div id="emailHelp" className="form-text mt-3 text-info">
+            <Link to="/Forgotpassword"> Forgot password?</Link>
           </div>
         </div>
-
-        <button type="submit" className="login-button btn text-white" disabled={isSubmitting}>
+           <div className='d-flex gap-3'>
+           <button type="submit" className="login-button btn text-white" disabled={isSubmitting}>
           {isSubmitting ? 'Logging in...' : 'Login'}
         </button>
+        <button type="submit" className="Signup-button btn " >
+          <Link to="/signup" className='text-white' >
+          Sign up
+            </Link>
+        </button>
+           </div>
       </form>
     </div>
       </div>
 
       <BreadCrumb title="Login"></BreadCrumb>
-    </main>
+    </div>
   );
 };
 

@@ -11,6 +11,11 @@ import Login from './pages/Login';
 import Wishlist from './pages/Wishlist';
 import Signup from './pages/Signup';
 import Forgetpassword from './pages/Forgetpassword';
+import SingleBlogs from './pages/SingleBloge';
+import TermsAndConditions from './pages/TermsAndConditions';
+import ShippingPolicy from './pages/ShippingPolicy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import SingleProduct from './pages/SingleProduct';
 
 function App() {
   return (
@@ -27,6 +32,11 @@ function App() {
           <Route path="wishlist" element={<Wishlist/>} />
           <Route path="signup" element={<Signup/>} />
           <Route path="Forgotpassword" element={<Forgetpassword/>} />
+          <Route path="blogs/blog/:id" element={<SingleBlogs/>} />
+          <Route path="termsAndConditions" element={<TermsAndConditions/>} />
+          <Route path="shippingPolicy" element={<ShippingPolicy/>} />
+          <Route path="privacyPolicy" element={<PrivacyPolicy/>} />
+          <Route path="store/:id" element={<SingleProduct/>} />
 
      </Route>
 </Routes>

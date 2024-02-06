@@ -8,7 +8,7 @@ import "../styles/blogs.css";
 const Blogs = () => {
   return (
       <main>
-        <Meta title="Our Store"></Meta>
+        <Meta title="Blogs"></Meta>
         <div className="blogs-wrapper  home-wrapper-2 py-5">
           <div className="container-xxl">
             <div className="row">
@@ -31,8 +31,10 @@ const Blogs = () => {
                <BlogCardPageComp
               day={item.day}
               title={item.title}
-              desc={item.description}
+              desc={item.description.split(' ').slice(0, 15).join(' ')}
+              description={item.description}
               img={item.Image}
+              id={item.id}
             ></BlogCardPageComp>
           ))}
                 </div>

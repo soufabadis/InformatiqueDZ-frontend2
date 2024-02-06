@@ -104,7 +104,7 @@ function Footer() {
                   <Link to='/link8'>shipping Policy</Link>
                 </li>
                 <li>
-                  <Link to='/link9'>Terms of Service</Link>
+                  <Link to='/termsAndConditions'>Terms of Service</Link>
                 </li>
                 <li>
                   <Link to='/link10'>Blogs</Link>

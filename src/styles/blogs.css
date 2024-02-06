@@ -15,4 +15,16 @@
    width: 100%;
  }
  
- 
+.single-blog-card h3 {
+font-size: 24px;
+font-weight: 600;
+color:var(--product-title);
+} 
+.single-blog-card p {
+   font-size: 14px;
+   color:var(--text-description );
+} 
+   
+.arrow-icons {
+   width:10px;
+}

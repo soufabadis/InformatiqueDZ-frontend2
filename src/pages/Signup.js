@@ -85,7 +85,8 @@ const Signup = () => {
             
             </div>
             <div id="emailHelp" className="form-text mt-3 mb-3">
-                <Link to="Forgotpassword">Forgot password?</Link>
+            <Link to="/Forgotpassword"> Forgot password?</Link>
+
               </div>
             <div className='d-flex gap-3'>
               <button type="submit" className="Signup-button btn text-white">
@@ -101,7 +102,7 @@ const Signup = () => {
         </div>
       </div>
 
-      <BreadCrumb title="Login"></BreadCrumb>
+      <BreadCrumb title="Signup"></BreadCrumb>
     </main>
   );
 }
